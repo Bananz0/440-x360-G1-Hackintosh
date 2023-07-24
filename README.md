@@ -14,11 +14,32 @@ This repository contains the OpenCore EFI folder tailored for the HP ProBook 440
 
 ### Features
 
-- **Compatibility:** Designed and tested for HP ProBook 440 x360 G1 laptops. (Add any specific hardware details here if necessary)
-- **macOS Support:** Provides a smooth boot process for macOS Mojave, Catalina, Big Sur, or later versions. (Specify supported macOS versions)
+- **Compatibility:** Designed and tested for HP ProBook 440 x360 G1 laptops. 
+
+- **macOS Support:** Provides a somewhat smooth boot process for macOS Ventura
+
 - **Stability:** Carefully crafted to offer a stable and reliable boot experience.
+
 - **Optimized:** Optimized ACPI, kexts, and configurations for better performance and compatibility.
+
 - **Easy Setup:** Detailed instructions on how to set up OpenCore on your HP ProBook 440 x360 G1.
+
+### Hardware Specifications
+
+| Specifications      | Detail                                      |
+| ------------------- | ------------------------------------------- |
+| Computer model      | HP ProBook x360 440 G1			    |
+| Processor           | Intel Core i5-8250U Processor               |
+| HDD		      | Western Digital CL SN520 NVMe SSD.          |
+| Integrated Graphics | Intel® HD Graphics 620                      |
+| Monitor             | FHD 1920x1080 (14 inch)                     |
+| Sound Card          | Conexant CX8200				    |
+| Wireless Card       | Intel® Wireless-AC 8265 802.11b/g/n/ac      |
+| Ethernet/LAN        | Realtek RTL8168/8111 PCI-E Gigabit Ethernet |
+| Card Reader         | Realtek Semiconductor RTS5129 Card Reader   |
+
+
+
 
 ### How to Use
 
