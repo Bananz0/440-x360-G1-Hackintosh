@@ -70,6 +70,38 @@
                     <key>Path</key>
                     <string>SSDT-XOSI.aml</string>
                 </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>SSDT-PTSWAKTTS.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>SSDT-LIDpatch.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>SSDT-SBUS-MCHC.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>SSDT-EXT3-WakeScreen.aml</string>
+                </dict>
             </array>
             <key>Delete</key>
             <array/>
@@ -261,7 +293,7 @@
                     <key>BaseSkip</key>
                     <integer>0</integer>
                     <key>Comment</key>
-                    <string>_OSI to XOSI rename - requires SSDT-XOSI.aml</string>
+                    <string>_OSI to XOSI rename</string>
                     <key>Count</key>
                     <integer>0</integer>
                     <key>Enabled</key>
@@ -284,6 +316,156 @@
                     <integer>0</integer>
                     <key>TableSignature</key>
                     <data>AAA=</data>
+                </dict>
+                <dict>
+                    <key>Base</key>
+                    <string></string>
+                    <key>BaseSkip</key>
+                    <integer>0</integer>
+                    <key>Comment</key>
+                    <string>_PTS to ZPTS(1,N)</string>
+                    <key>Count</key>
+                    <integer>0</integer>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Find</key>
+                    <data>X1BUUwE=</data>
+                    <key>Limit</key>
+                    <integer>0</integer>
+                    <key>Mask</key>
+                    <data></data>
+                    <key>OemTableId</key>
+                    <data></data>
+                    <key>Replace</key>
+                    <data>WlBUUwE=</data>
+                    <key>ReplaceMask</key>
+                    <data></data>
+                    <key>Skip</key>
+                    <integer>0</integer>
+                    <key>TableLength</key>
+                    <integer>0</integer>
+                    <key>TableSignature</key>
+                    <data></data>
+                </dict>
+                <dict>
+                    <key>Base</key>
+                    <string></string>
+                    <key>BaseSkip</key>
+                    <integer>0</integer>
+                    <key>Comment</key>
+                    <string>_WAK to ZWAK(1,S)</string>
+                    <key>Count</key>
+                    <integer>0</integer>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Find</key>
+                    <data>X1dBSwk=</data>
+                    <key>Limit</key>
+                    <integer>0</integer>
+                    <key>Mask</key>
+                    <data></data>
+                    <key>OemTableId</key>
+                    <data></data>
+                    <key>Replace</key>
+                    <data>WldBSwk=</data>
+                    <key>ReplaceMask</key>
+                    <data></data>
+                    <key>Skip</key>
+                    <integer>0</integer>
+                    <key>TableLength</key>
+                    <integer>0</integer>
+                    <key>TableSignature</key>
+                    <data></data>
+                </dict>
+                <dict>
+                    <key>Base</key>
+                    <string></string>
+                    <key>BaseSkip</key>
+                    <integer>0</integer>
+                    <key>Comment</key>
+                    <string>_LID to XLID rename</string>
+                    <key>Count</key>
+                    <integer>0</integer>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Find</key>
+                    <data>X0xJRA==</data>
+                    <key>Limit</key>
+                    <integer>0</integer>
+                    <key>Mask</key>
+                    <data></data>
+                    <key>OemTableId</key>
+                    <data>AAAAAA==</data>
+                    <key>Replace</key>
+                    <data>WExJRA==</data>
+                    <key>ReplaceMask</key>
+                    <data></data>
+                    <key>Skip</key>
+                    <integer>0</integer>
+                    <key>TableLength</key>
+                    <integer>0</integer>
+                    <key>TableSignature</key>
+                    <data>AAA=</data>
+                </dict>
+                <dict>
+                    <key>Base</key>
+                    <string></string>
+                    <key>BaseSkip</key>
+                    <integer>0</integer>
+                    <key>Comment</key>
+                    <string>SLPB to XLPB rename</string>
+                    <key>Count</key>
+                    <integer>0</integer>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Find</key>
+                    <data>U0xQQg==</data>
+                    <key>Limit</key>
+                    <integer>0</integer>
+                    <key>Mask</key>
+                    <data></data>
+                    <key>OemTableId</key>
+                    <data>AAAAAA==</data>
+                    <key>Replace</key>
+                    <data>WExQQg==</data>
+                    <key>ReplaceMask</key>
+                    <data></data>
+                    <key>Skip</key>
+                    <integer>0</integer>
+                    <key>TableLength</key>
+                    <integer>0</integer>
+                    <key>TableSignature</key>
+                    <data>AAA=</data>
+                </dict>
+                <dict>
+                    <key>Base</key>
+                    <string></string>
+                    <key>BaseSkip</key>
+                    <integer>0</integer>
+                    <key>Comment</key>
+                    <string>RTC fix to stop Post Error</string>
+                    <key>Count</key>
+                    <integer>0</integer>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Find</key>
+                    <data>RwFwAHAAAQg=</data>
+                    <key>Limit</key>
+                    <integer>0</integer>
+                    <key>Mask</key>
+                    <data></data>
+                    <key>OemTableId</key>
+                    <data>AAAAAA==</data>
+                    <key>Replace</key>
+                    <data>RwFwAHAAAQI=</data>
+                    <key>ReplaceMask</key>
+                    <data></data>
+                    <key>Skip</key>
+                    <integer>0</integer>
+                    <key>TableLength</key>
+                    <integer>0</integer>
+                    <key>TableSignature</key>
+                    <data>RFNEVA==</data>
                 </dict>
             </array>
             <key>Quirks</key>
@@ -326,6 +508,8 @@
                 <true/>
                 <key>EnableWriteUnprotector</key>
                 <true/>
+                <key>FixupAppleEfiImages</key>
+                <false/>
                 <key>ForceBooterSignature</key>
                 <false/>
                 <key>ForceExitBootServices</key>
@@ -364,6 +548,8 @@
                     <string>Host bridge</string>
                     <key>model</key>
                     <string>Xeon E3-1200 v6/7th Gen Core Processor Host Bridge/DRAM Registers</string>
+                    <key>pci-aspm-default</key>
+                    <data>AgAAAA==</data>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x13,0x0)</key>
                 <dict>
@@ -373,6 +559,8 @@
                     <string>Non-VGA unclassified device</string>
                     <key>model</key>
                     <string>Sunrise Point-LP Integrated Sensor Hub</string>
+                    <key>pci-aspm-default</key>
+                    <data>AgAAAA==</data>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x14,0x0)</key>
                 <dict>
@@ -382,6 +570,8 @@
                     <string>USB controller</string>
                     <key>model</key>
                     <string>Sunrise Point-LP USB 3.0 xHCI Controller</string>
+                    <key>pci-aspm-default</key>
+                    <data>AgAAAA==</data>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x14,0x2)</key>
                 <dict>
@@ -391,6 +581,8 @@
                     <string>Signal processing controller</string>
                     <key>model</key>
                     <string>Sunrise Point-LP Thermal subsystem</string>
+                    <key>pci-aspm-default</key>
+                    <data>AgAAAA==</data>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x15,0x0)</key>
                 <dict>
@@ -400,6 +592,8 @@
                     <string>Signal processing controller</string>
                     <key>model</key>
                     <string>Sunrise Point-LP Serial IO I2C Controller #0</string>
+                    <key>pci-aspm-default</key>
+                    <data>AgAAAA==</data>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x15,0x1)</key>
                 <dict>
@@ -409,6 +603,8 @@
                     <string>Signal processing controller</string>
                     <key>model</key>
                     <string>Sunrise Point-LP Serial IO I2C Controller #1</string>
+                    <key>pci-aspm-default</key>
+                    <data>AgAAAA==</data>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x16,0x0)</key>
                 <dict>
@@ -418,6 +614,8 @@
                     <string>Communication controller</string>
                     <key>model</key>
                     <string>Sunrise Point-LP CSME HECI #1</string>
+                    <key>pci-aspm-default</key>
+                    <data>AgAAAA==</data>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x17,0x0)</key>
                 <dict>
@@ -427,6 +625,8 @@
                     <string>SATA controller</string>
                     <key>model</key>
                     <string>Sunrise Point-LP SATA Controller [AHCI mode]</string>
+                    <key>pci-aspm-default</key>
+                    <data>AgAAAA==</data>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x1C,0x0)</key>
                 <dict>
@@ -436,6 +636,8 @@
                     <string>PCI bridge</string>
                     <key>model</key>
                     <string>Sunrise Point-LP PCI Express Root Port #5</string>
+                    <key>pci-aspm-default</key>
+                    <data>AgAAAA==</data>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)</key>
                 <dict>
@@ -445,6 +647,8 @@
                     <string>Ethernet controller</string>
                     <key>model</key>
                     <string>RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller</string>
+                    <key>pci-aspm-default</key>
+                    <data>AgEAAA==</data>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x1C,0x5)</key>
                 <dict>
@@ -454,6 +658,8 @@
                     <string>PCI bridge</string>
                     <key>model</key>
                     <string>Sunrise Point-LP PCI Express Root Port #6</string>
+                    <key>pci-aspm-default</key>
+                    <data>AgAAAA==</data>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x1C,0x5)/Pci(0x0,0x0)</key>
                 <dict>
@@ -472,6 +678,8 @@
                     <string>Signal processing controller</string>
                     <key>model</key>
                     <string>Sunrise Point-LP Serial IO UART Controller #0</string>
+                    <key>pci-aspm-default</key>
+                    <data>AgAAAA==</data>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x1E,0x6)</key>
                 <dict>
@@ -481,6 +689,8 @@
                     <string>SD Host controller</string>
                     <key>model</key>
                     <string>Sunrise Point-LP Secure Digital IO Controller</string>
+                    <key>pci-aspm-default</key>
+                    <data>AwAAAA==</data>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x1F,0x0)</key>
                 <dict>
@@ -490,6 +700,8 @@
                     <string>ISA bridge</string>
                     <key>model</key>
                     <string>Sunrise Point LPC Controller/eSPI Controller</string>
+                    <key>pci-aspm-default</key>
+                    <data>AgAAAA==</data>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x1F,0x2)</key>
                 <dict>
@@ -499,6 +711,8 @@
                     <string>Memory controller</string>
                     <key>model</key>
                     <string>Sunrise Point-LP PMC</string>
+                    <key>pci-aspm-default</key>
+                    <data>AgAAAA==</data>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
                 <dict>
@@ -510,6 +724,8 @@
                     <integer>23</integer>
                     <key>model</key>
                     <string>Sunrise Point-LP HD Audio</string>
+                    <key>pci-aspm-default</key>
+                    <data>AgAAAA==</data>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x1F,0x4)</key>
                 <dict>
@@ -519,6 +735,8 @@
                     <string>SMBus</string>
                     <key>model</key>
                     <string>Sunrise Point-LP SMBus</string>
+                    <key>pci-aspm-default</key>
+                    <data>AgAAAA==</data>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x2,0x0)</key>
                 <dict>
@@ -526,12 +744,20 @@
                     <data>AADAhw==</data>
                     <key>AAPL,slot-name</key>
                     <string>Internal@0,2,0</string>
+                    <key>AAPL00,override-no-connect</key>
+                    <data>AP///////wANrtQUAAAAAAobAQSQHxF4Aihll1lUjiceUFQAAAABAQEBAQEBAQEBAQEBAQEBtDuASnE4NEBQPGgANa0QAAAazSeASnE4NEBQPGgANa0QAAAaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAMRP8LPG4QDxtuAAAAAEg=</data>
                     <key>device-id</key>
                     <data>FlkAAA==</data>
                     <key>device_type</key>
                     <string>VGA compatible controller</string>
+                    <key>enable-hdmi20</key>
+                    <data>AQAAAA==</data>
+                    <key>enable-max-pixel-clock-override</key>
+                    <data>AQAAAA==</data>
                     <key>model</key>
                     <string>Intel HD Graphics 620</string>
+                    <key>pci-aspm-default</key>
+                    <data>AgAAAA==</data>
                 </dict>
                 <key>PciRoot(0x0)/Pci(0x4,0x0)</key>
                 <dict>
@@ -541,6 +767,8 @@
                     <string>Signal processing controller</string>
                     <key>model</key>
                     <string>Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor Thermal Subsystem</string>
+                    <key>pci-aspm-default</key>
+                    <data>AgAAAA==</data>
                 </dict>
             </dict>
             <key>Delete</key>
@@ -556,7 +784,7 @@
                     <key>BundlePath</key>
                     <string>Lilu.kext</string>
                     <key>Comment</key>
-                    <string>V1.6.7 | Lilu.kext</string>
+                    <string>V1.6.7</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -592,7 +820,7 @@
                     <key>BundlePath</key>
                     <string>AirportItlwm.kext</string>
                     <key>Comment</key>
-                    <string>V2.2.0 | AirportItlwm.kext</string>
+                    <string>V2.3.0 | AirportItlwm.kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -610,7 +838,7 @@
                     <key>BundlePath</key>
                     <string>IntelBluetoothFirmware.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.0 | IntelBluetoothFirmware.kext</string>
+                    <string>V2.4.0 | IntelBluetoothFirmware.kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -808,7 +1036,7 @@
                     <key>BundlePath</key>
                     <string>AppleALC.kext</string>
                     <key>Comment</key>
-                    <string>V1.8.4 | AppleALC.kext</string>
+                    <string>V1.9.0 | AppleALC.kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -880,7 +1108,7 @@
                     <key>BundlePath</key>
                     <string>IntelBTPatcher.kext</string>
                     <key>Comment</key>
-                    <string>V2.3.0 | IntelBTPatcher.kext</string>
+                    <string>V2.4.0 | IntelBTPatcher.kext</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1006,7 +1234,7 @@
                     <key>BundlePath</key>
                     <string>EmeraldSDHC.kext</string>
                     <key>Comment</key>
-                    <string>V0.1.1</string>
+                    <string>V0.1.2</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1060,7 +1288,7 @@
                     <key>BundlePath</key>
                     <string>HibernationFixup.kext</string>
                     <key>Comment</key>
-                    <string>V1.4.9</string>
+                    <string>V1.5.0</string>
                     <key>Enabled</key>
                     <true/>
                     <key>ExecutablePath</key>
@@ -1127,7 +1355,38 @@
             <key>Force</key>
             <array/>
             <key>Patch</key>
-            <array/>
+            <array>
+                <dict>
+                    <key>Arch</key>
+                    <string>x86_64</string>
+                    <key>Base</key>
+                    <string>__ZN11BCM5701Enet14getAdapterInfoEv</string>
+                    <key>Comment</key>
+                    <string>Broadcom BCM57785 patch</string>
+                    <key>Count</key>
+                    <integer>1</integer>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Find</key>
+                    <data>6AAA//9miYMABQAA</data>
+                    <key>Identifier</key>
+                    <string>com.apple.iokit.AppleBCM5701Ethernet</string>
+                    <key>Limit</key>
+                    <integer>0</integer>
+                    <key>Mask</key>
+                    <data>/wAA////////////</data>
+                    <key>MaxKernel</key>
+                    <string>19.9.9</string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>Replace</key>
+                    <data>uLQWAABmiYMABQAA</data>
+                    <key>ReplaceMask</key>
+                    <data></data>
+                    <key>Skip</key>
+                    <integer>0</integer>
+                </dict>
+            </array>
             <key>Quirks</key>
             <dict>
                 <key>AppleCpuPmCfgLock</key>
@@ -1198,7 +1457,7 @@
                 <key>ConsoleAttributes</key>
                 <integer>0</integer>
                 <key>HibernateMode</key>
-                <string>Auto</string>
+                <string>NVRAM</string>
                 <key>HibernateSkipsPicker</key>
                 <true/>
                 <key>HideAuxiliary</key>
@@ -1210,7 +1469,7 @@
                 <key>LauncherPath</key>
                 <string>Default</string>
                 <key>PickerAttributes</key>
-                <integer>17</integer>
+                <integer>129</integer>
                 <key>PickerAudioAssist</key>
                 <false/>
                 <key>PickerMode</key>
@@ -1220,7 +1479,7 @@
                 <key>PollAppleHotKeys</key>
                 <true/>
                 <key>ShowPicker</key>
-                <true/>
+                <false/>
                 <key>TakeoffDelay</key>
                 <integer>0</integer>
                 <key>Timeout</key>
@@ -1334,6 +1593,28 @@
                     <key>TextMode</key>
                     <false/>
                 </dict>
+                <dict>
+                    <key>Arguments</key>
+                    <string></string>
+                    <key>Auxiliary</key>
+                    <false/>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>Flavour</key>
+                    <string>Auto</string>
+                    <key>FullNvramAccess</key>
+                    <true/>
+                    <key>Name</key>
+                    <string>ControlMsrE2</string>
+                    <key>Path</key>
+                    <string>ControlMsrE2.efi</string>
+                    <key>RealPath</key>
+                    <true/>
+                    <key>TextMode</key>
+                    <true/>
+                </dict>
             </array>
         </dict>
         <key>NVRAM</key>
@@ -1348,7 +1629,7 @@
                 <key>4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102</key>
                 <dict>
                     <key>rtc-blacklist</key>
-                    <data>WFne3w==</data>
+                    <data>WFne3+A=</data>
                 </dict>
                 <key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
                 <dict>
@@ -1361,7 +1642,7 @@
                     <key>bluetoothInternalControllerInfo</key>
                     <data>AAAAAAAAAAAAAAAAAAA=</data>
                     <key>boot-args</key>
-                    <string>hbfx-ahbm=115 -hbfx-disable-patch-pci rtcfx_exclude=58,59,DE,DF</string>
+                    <string>hbfx-ahbm=115</string>
                     <key>csr-active-config</key>
                     <data>AAAAAA==</data>
                     <key>prev-lang:kbd</key>
@@ -1531,7 +1812,7 @@
                 <integer>0</integer>
             </dict>
             <key>ConnectDrivers</key>
-            <true/>
+            <false/>
             <key>Drivers</key>
             <array>
                 <dict>
@@ -1540,7 +1821,7 @@
                     <key>Comment</key>
                     <string>HfsPlus.efi</string>
                     <key>Enabled</key>
-                    <true/>
+                    <false/>
                     <key>LoadEarly</key>
                     <false/>
                     <key>Path</key>
@@ -1757,6 +2038,8 @@
                 <key>ResizeGpuBars</key>
                 <integer>-1</integer>
                 <key>ResizeUsePciRbIo</key>
+                <false/>
+                <key>ShimRetainProtocol</key>
                 <false/>
                 <key>TscSyncTimeout</key>
                 <integer>0</integer>
